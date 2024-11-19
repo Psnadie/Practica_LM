@@ -27,12 +27,52 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  li a {
+}
+li a {
     color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
     margin: 0 3.5rem 0 0;
     font-family: "Open Sans", sans-serif;
-  }
+}
+.slider{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.slider img{
+    flex: 100%;
+    scroll-snap-align: start;
+}
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.botones_slider {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+.botones_slider{
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.botones_slider a{
+    padding: 38px 3px;
+    text-decoration: none;
+    color: aliceblue;
+    opacity: 75%;
+}
+.botones_slider a:hover{
+    opacity: 1;
+}
+.botones_slider a:active{
+    opacity: 1;
+}
