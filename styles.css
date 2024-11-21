@@ -131,6 +131,43 @@ body{
     background-attachment: fixed;
 }
 #img_fondo{
+    display: flex;
     width: 100%;
     height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+#centro_fondo{
+    height: 300px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#centro_fondo p{
+    font-size: 1.5rem;
+}
+#estudio{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.viñeta{
+    display: flex;
+    height: 200px;
+}
+#viñeta_1{
+    background-image: url("./imgs/financiero.avif");
+}
+#viñeta_2{
+    
+}
+#viñeta_3{
+    
+}
+#viñeta_4{
+    
 }
