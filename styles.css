@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url("./imgs/fondo.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header{
@@ -127,11 +130,6 @@ li a {
     width: 60%;
     height: 80%;
 }
-body{
-    background-image: url("./imgs/fondo.avif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 #img_fondo{
     display: flex;
     width: 100%;
@@ -150,25 +148,48 @@ body{
     font-size: 1.5rem;
 }
 #estudio{
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 800px;
     background-color: black;
+}
+#espacio{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
+
 }
 .viñeta{
     overflow: hidden;
+    position: relative;
+    margin: 0;
 }
 .viñeta img{
     width: 100%;
 }
 .small{
-    height: 300px;
-    width: 35%;
+    height: 250px;
+    width: 25%;
 }
 .large{
-    height: 300px;
-    width: 55%;
+    height: 250px;
+    width: 45%;
+}
+.texto_estudio{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 50%;
+}
+#Casos{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+#Casos >h3{
+    margin: 0;
+    padding: 0;
 }
