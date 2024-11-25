@@ -151,6 +151,7 @@ li a {
     width: 100%;
     height: 800px;
     background-color: black;
+    
 }
 #espacio{
     padding-top: 75px;
@@ -172,7 +173,7 @@ li a {
 }
 .small{
     height: 250px;
-    width: 25%;
+    width: 28%;
 }
 .large{
     height: 250px;
@@ -192,4 +193,77 @@ li a {
 #Casos >h3{
     margin: 0;
     padding: 0;
+}
+#Productos{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px   ;
+    justify-content: space-between;
+    height: 600px;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+#Productos h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    width: 100%;
+}
+#prod_des{
+    width: 100%;
+}
+.prod{
+    width: 25%;
+    padding: 10px;
+}
+.prod img{
+    width: 100%;
+}
+.prod p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.boton{
+    color: #fff;
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+}
+.boton:hover{
+    background-color: #fff;
+    color: #000;
+}
+#noticias{
+    background-image: linear-gradient(black,#202020);
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+#tit{
+    width: 100%;
+    height: 50px;
+}
+#tit h2{
+    margin: 0;
+    padding: 0;
+}
+.noti{
+    width: 18%;
+}
+.noti img{
+    width: 100%;
 }
