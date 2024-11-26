@@ -4,9 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("./imgs/fondo.avif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
 
 header{
@@ -114,12 +112,15 @@ li a {
 
 #contenedor{
     display: flex;
-    background: rgb(43,141,161);
-    background: radial-gradient(circle, rgba(43,141,161,1) 0%, rgba(0,0,0,1) 79%, rgba(2,0,36,1) 100%);
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,70,91,1) 0%, rgba(0,0,0,1) 100%);
     height: 500px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
 }
 #texto_avances{
     width: 30%;
@@ -131,6 +132,9 @@ li a {
     height: 80%;
 }
 #img_fondo{
+    background-image: url("./imgs/fondo.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     width: 100%;
     height: 800px;
@@ -152,15 +156,16 @@ li a {
     height: 800px;
     background-color: black;
     
+    
 }
 #espacio{
     padding-top: 75px;
     padding-bottom: 75px;
+    padding-right: 200px;
+    padding-left: 200px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    justify-content: center;
-    align-items: center;
 
 }
 .viñeta{
@@ -172,12 +177,12 @@ li a {
     width: 100%;
 }
 .small{
-    height: 250px;
-    width: 28%;
+    height: 275px;
+    width: 35%;
 }
 .large{
-    height: 250px;
-    width: 45%;
+    height: 275px;
+    width: 62%;
 }
 .texto_estudio{
     position: absolute;
@@ -187,12 +192,14 @@ li a {
 }
 #Casos{
     width: 100%;
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    
+    height: 50px;
 }
 #Casos >h3{
     margin: 0;
     padding: 0;
+    font-size: 2rem;
 }
 #Productos{
     background-color: black;
@@ -248,6 +255,7 @@ li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 150px;
     padding-bottom: 150px;
     padding-right: 200px;
     padding-left: 200px;
@@ -260,10 +268,135 @@ li a {
 #tit h2{
     margin: 0;
     padding: 0;
+    font-size: 2rem;
 }
 .noti{
-    width: 18%;
+    width: 19%;
+    background-color: #202020;
+    padding: 15px;
+    height: 300px;
 }
 .noti img{
     width: 100%;
+}
+#destacadas{
+    background-color: #000;
+    height: 400px;
+    padding-top: 150px;
+    padding-bottom: 150px;;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+#destacadas h3{
+    font-family: "Saira", sans-serif;
+    margin-bottom: 25px;
+}
+#destacadas > .slider_wrapper >.slider > .slide >.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.footer {
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-around;
+    background-color: #000;
+  }
+  
+  .footer-column {
+    margin: 0 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #fff;
+  }
+  #ul_footer li{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+  }
+
+  #ul_footer li:hover{
+    color: #fff;
+  }
+
+  /*----------------------  ESTILOS PARA LA SEGUNDA PAGINA DE HTML    -----------------*/
+#max_ren{
+    position: relative;
+}
+#max_ren .text-overlay{
+    position: absolute;
+    left: 30%;
+    width: 35%;
+
+}
+#fondo_2{
+    width: 100%;
+    height: 550px;
+    display: block;
+    object-fit: cover;
+}
+#cont_logo1{
+    width: 200px;
+    height: 300px;
+}
+#cont_logo1 img{
+    width: 100%;
+}
+#sec img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+#sec{
+    position: relative;
+}
+#sec_1{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 25%;
+}
+#sec_1 p{
+    font-size: 16px;
+}
+#img_fondo2{
+    background-image: url("./imgs/fondo_estreallado_rojo.avif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+#fondo_3{
+    width: 100%;
+    height: 550px;
+    display: block;
+    object-fit: cover;
 }
