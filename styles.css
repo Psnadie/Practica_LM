@@ -352,9 +352,9 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,70,91,1) 0%, rgba(
     position: relative;
 }
 #max_ren .text-overlay{
-    position: absolute;
     left: 30%;
     width: 35%;
+    top: 50%;
 
 }
 #fondo_2{
@@ -363,11 +363,10 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,70,91,1) 0%, rgba(
     display: block;
     object-fit: cover;
 }
-#cont_logo1{
+.cont_logo{
     width: 200px;
-    height: 300px;
 }
-#cont_logo1 img{
+.cont_logo img{
     width: 100%;
 }
 #sec img{
@@ -378,25 +377,36 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,70,91,1) 0%, rgba(
 #sec{
     position: relative;
 }
-#sec_1{
-    position: absolute;
+.texto_sobre_img_der{
     top: 50%;
-    left: 70%;
-    width: 25%;
+    left: 75%;
+    width: 35%;
 }
-#sec_1 p{
+.texto_sobre_img_der p{
     font-size: 16px;
 }
-#img_fondo2{
-    background-image: url("./imgs/fondo_estreallado_rojo.avif");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
+.texto_sobre_img_izq{
+    top: 50%;
+    right: 75%;
+    width: 35%;
 }
-#fondo_3{
+.texto_sobre_img_izq p{
+    font-size: 16px;
+}
+.info_p2 .img_fondo_info{
     width: 100%;
     height: 550px;
     display: block;
     object-fit: cover;
+}
+.info_p2{
+    position: relative;
+    height: 600px;
+}
+#fondo_p2{
+    background-image: url("./imgs/fondo_estreallado_rojo.avif");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
