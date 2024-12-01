@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varios Botones Colapsables</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Contenedor principal */
+        .contenedor-colapsables {
+            width: 60%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* Estilo de los botones */
+        .tab-button {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            text-align: left;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Ocultar el checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Estilo del contenido colapsable */
+        .contenedor-colapsable {
+            max-height: 0;
+            overflow: hidden;
+            background-color: #000;
+            color: white;
+            padding: 0 15px;
+            opacity: 0;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: all 0.3s ease-out;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Mostrar contenido cuando el checkbox está marcado */
+        input[type="checkbox"]:checked + .tab-button + .contenedor-colapsable {
+            max-height: 150px; /* Ajusta la altura según el contenido */
+            opacity: 1;
+            transform: scaleY(1);
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Varios Botones Colapsables</h2>
+
+    <div class="contenedor-colapsables">
+        <!-- Botón y contenido 1 -->
+        <input type="checkbox" id="toggle1">
+        <label for="toggle1" class="tab-button">Mostrar Contenido 1</label>
+        <div class="contenedor-colapsable">
+            <p>Este es el contenido colapsable 1. Puedes agregar cualquier información aquí.</p>
+        </div>
+
+        <!-- Botón y contenido 2 -->
+        <input type="checkbox" id="toggle2">
+        <label for="toggle2" class="tab-button">Mostrar Contenido 2</label>
+        <div class="contenedor-colapsable">
+            <p>Este es el contenido colapsable 2. Más información aquí.</p>
+        </div>
+
+        <!-- Botón y contenido 3 -->
+        <input type="checkbox" id="toggle3">
+        <label for="toggle3" class="tab-button">Mostrar Contenido 3</label>
+        <div class="contenedor-colapsable">
+            <p>Este es el contenido colapsable 3. Aquí puedes añadir más contenido relevante.</p>
+        </div>
+
+        <!-- Botón y contenido 4 -->
+        <input type="checkbox" id="toggle4">
+        <label for="toggle4" class="tab-button">Mostrar Contenido 4</label>
+        <div class="contenedor-colapsable">
+            <p>Este es el contenido colapsable 4. Agrega más detalles aquí si es necesario.</p>
+        </div>
+    </div>
+
+</body>
+</html>
