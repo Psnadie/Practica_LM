@@ -110,26 +110,75 @@ li a {
     opacity: 1;
 }
 
-#contenedor{
-    display: flex;
+#fondo_azul{
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,70,91,1) 0%, rgba(0,0,0,1) 100%);
     height: 500px;
-    width: 100%;
     padding-top: 75px;
     padding-bottom: 75px;
     padding-right: 200px;
     padding-left: 200px;
-    
+}
+#contenedor_carrusel{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 #texto_avances{
     width: 30%;
-    height: 80%;
-    
 }
-#carrusel{
-    width: 60%;
-    height: 80%;
+#carrusel_wrapper{
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    padding: 75px;
+}
+#carrusel{ 
+    height: 100%;
+    width: fit-content;
+    overflow-x: hidden;
+    display: flex;
+}
+#carrusel_wrapper::-webkit-scrollbar{
+    width: 80px;
+    height: 5px;
+}
+#carrusel_wrapper::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+#carrusel_wrapper::-webkit-scrollbar-track{
+    background: rgba(61, 61, 61, 0.795);
+}
+.tarjeta_carrusel{
+    height: 100%;
+    width: 300px;
+    background-color:#27282b;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.imagen_carrusel{
+    height: 50%;
+    width: 100%;
+}
+.imagen_carrusel img{
+    width: 100%;
+}
+.texto_carrusel{
+    display: block;
+    align-items: end;
+    height: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.texto_carrusel h3{
+    margin: 0;
+    padding: 0;
+}
+.texto_carrusel p{
+    margin: 0;
+    padding: 0;
 }
 #img_fondo{
     background-image: url("./imgs/fondo.avif");
@@ -587,6 +636,9 @@ li a {
     text-decoration: none;
     color: white;
 }
+.tab-button:checked{
+    color: white;
+}
 .collapsible-list{
     width: 100%;
 }
@@ -686,13 +738,75 @@ li a {
   }
   
   .collapsible-content .content-inner {
+    display: flex;
+    justify-content: space-evenly;
     background: black;
     border-bottom: 1px solid #fff;
     padding: .5rem 1rem;
   }
   .contenedor_imagen_p2{
     width: 15%;
+    padding: 1%;
   }
   .contenedor_imagen_p2 img{
     width: 100%;
+  }
+
+  #intro{
+    background-image: url("./imgs/banner.avif");
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 375px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+  #texto_intro{
+    margin-left: 325px;
+    width: 30%;
+    height: 80%;
+  }
+
+  #titulo_intro{
+    font-family: "Saira", sans-serif;
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
+  #dragon{
+    background-image: url("./imgs/fondo_dragon.avif");
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+  #contenido_dragon h3{
+    font-size: 1.95rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  #contenido_dragon p{
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  #video_dragon{
+    width: 70%;
+    margin: auto;
+  }
+  #video_dragon img{
+    width: 100%;
+  }
+  #video_negro{
+    background-color: #000;
+    width: 100%;
+    height: 500px;
   }
